@@ -6,7 +6,7 @@ import com.example.mapping.{Employee, EmployeeAsTable}
 import scala.concurrent.Future
 
 
-class EmployeeRepo extends EmployeeAsTable with PostgresComponent {
+class EmployeeRepo extends EmployeeAsTable with MySqlComponent {
 
   this: DBComponent =>
 

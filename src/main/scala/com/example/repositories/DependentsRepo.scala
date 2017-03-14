@@ -1,11 +1,11 @@
 package com.example.repositories
 
-import com.example.connection.{DBComponent, PostgresComponent}
+import com.example.connection.{DBComponent, MySqlComponent, PostgresComponent}
 import com.example.mapping.{DependentAsTable, Dependents}
 
 import scala.concurrent.Future
 
-class DependentsRepo extends DependentAsTable with PostgresComponent{
+class DependentsRepo extends DependentAsTable with MySqlComponent{
 
   this: DBComponent =>
 
